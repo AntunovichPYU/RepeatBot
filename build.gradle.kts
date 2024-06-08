@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "ru.antunovichpyu"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 
 java {
 	toolchain {
@@ -42,6 +42,14 @@ kotlin {
 	compilerOptions {
 		freeCompilerArgs.addAll("-Xjsr305=strict")
 	}
+}
+
+tasks.withType<JavaCompile> {
+	options.encoding = "UTF-8"
+}
+
+tasks.withType<Javadoc>{
+	options.encoding = "UTF-8"
 }
 
 tasks.withType<Test> {
