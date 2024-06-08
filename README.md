@@ -39,7 +39,7 @@ Open the command line and move to the project directory. Then build .jar file wi
 
 After this you may run application from jar file:
 
-`java -jar build/libs/RepeatBot-0.0.1.jar`
+`java -jar build/libs/RepeatBot-1.0.0.jar`
 
 Or using docker:
 
