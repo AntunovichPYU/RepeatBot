@@ -17,7 +17,7 @@ class MessageService(val vkProperties: VkProperties) {
                 formNewMessage(requestDto)
                 return "ok"
             }
-            else -> return ""
+            else -> throw IllegalArgumentException()
         }
     }
 
